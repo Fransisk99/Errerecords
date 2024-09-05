@@ -7,12 +7,15 @@
     <title>ErreRecords</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-reboot.css">
-    <link rel="stylesheet" href="bootstrap-grid.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-utilities.css">
+    <link rel="stylesheet" href=".\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap.css">
+    <link rel="stylesheet" href=".\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap-grid.css">
+    <link rel="stylesheet" href=".\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap.css">
+    <link rel="stylesheet" href=".\bootstrap-5.3.3-dist\bootstrap-5.3.3-dist\css\bootstrap-utilities.css">
+    <link rel="stylesheet" href=".\bootstrap-icons-1.11.3\font\bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Logo 6 ok 2.png">
 
+    <link rel="stylesheet" href="script.js">
     <style>
         html {
             scroll-behavior: smooth;
@@ -26,8 +29,8 @@
             <ul class="navMenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#paragrafoContainer">Chi siamo</a></li>
-                <li><a href="#albums">Albums</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#artistiContainer">Albums</a></li>
+                <li><a href="#Footer">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -48,15 +51,29 @@
         <p>Ascolta il remix di <a href="https://www.youtube.com/watch?v=wKyft1Qazow" target="_blank">Full metal jaket</a></p>
     </div>
 
+   
+
+      <div class="immaginiRandomContainer">
+        <img src="Immagini/foto1.jpg" alt="foto1">
+        <img src="Immagini/foto2.jpg" alt="foto2">
+        <img src="Immagini/foto3.jpg" alt="foto3">
+        <img src="Immagini/foto4.jpg" alt="foto4">
+        <img src="Immagini/foto5.jpg" alt="foto5">
+        <img src="Immagini/foto6.jpg" alt="foto6">
+      </div>
+  
+    </div>
+    
     <!--Questo è il logo grande--> 
-    <figure class="superLogoContainer">
+    <figure id="artistiContainer" class="superLogoContainer">
         <a ><img class="superLogo" src="Immagini/Logo 6 ok 2.png" alt="logo"></a>
     </figure>
 
     
-    <div class="artistiContainer">
+    <!--Questa è la lista artisti/album-->
+    <div  class="artistiContainer">
         <DIV class="artistCard">
-            <h3> <img src="Immagini/Brown.png" alt=""></h3>
+            <h3> Brown</h3>
             <div class="albums">
                 <img src="Immagini/Brown - Minimal copertina.jpg" alt="minimal">
                 <img src="Immagini/Sound of night prova 3.jpg" alt="">
@@ -65,7 +82,7 @@
         </DIV>
 
         <DIV class="artistCard">
-            <h3>The F-Sisk</h3>
+            <h3> The F-Sisk</h3>
             <div class="albums">
                 <img src="Immagini/Fronte 2.jpg" alt="sound of silence">
                 <img src="Immagini/02 Copertina Indistruttibile.jpg" alt="">
@@ -74,6 +91,122 @@
         </DIV>
     </div>
   
-    <script src="script.js"></script>
+    
+
+    <!-- Footer -->
+<footer id="Footer" class="text-center text-lg-start bg-color-footer text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="">
+        <span class="text">Vienici a trovare sui Link Social qui di seguito:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div class="text">
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-tiktok"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+           <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p class="text">
+              The name of the company is Errerecords
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase text fw-bold mb-4">
+              Products
+            </h6>
+            <p class="text">
+              <a href="#!" class="text-reset"></a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset">Music Maker</a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset">Audacity</a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset">Virtual dj</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase text fw-bold mb-4">
+              Useful links
+            </h6>
+            <p class="text">
+              <a href="#!" class="text-reset text">Pricing</a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset text">Settings</a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset text">Orders</a>
+            </p>
+            <p class="text">
+              <a href="#!" class="text-reset text">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase text fw-bold mb-4">Contact</h6>
+            <p class="text"><i class="fas fa-home me-3"></i> Roma Nepi</p>
+            <p>
+              <i class="fas text fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p class="text"><i class="fas fa-phone me-3"></i> + 06 90 41 176</p>
+            <p class="text"><i class="fas fa-print me-3"></i> + 06 90 41 847</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center text p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset text fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </body>
 </html>

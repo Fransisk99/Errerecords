@@ -233,14 +233,17 @@ border-radius: 10px;
 background-color: wheat;
 }
 
-.artistCard h3 {
+.artistCard h3{
     color: var(--backgoundColor);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
+   width: 100%;
+   text-align: center;
     font-family: sans-serif;
     margin: 0;
     padding: 10px;
     text-align: center;
+    
 }
 
 .albums{
@@ -258,3 +261,43 @@ background-color: wheat;
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+/* Classi del Footer*/
+
+.bg-color-footer {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.text {
+    --bs-text-opacity: 1;
+    color: var(--textColor);
+    text-decoration: none;
+  }
+  
+
+  .immaginiRandomContainer{
+    position: absolute;
+    right: 10%;
+    top:99%;
+    
+   background-color: antiquewhite;
+   padding: 20px;
+   border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .immaginiRandomContainer img{
+    width: 150px;
+    cursor: pointer;
+    
+  }
+
+  .immaginiRandomContainer img.ingrandita {
+    transform: scale(5);
+    z-index: 10;
+    position: relative;
+  }

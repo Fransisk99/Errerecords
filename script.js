@@ -1,15 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var button = document.getElementById("toggle-button");
-    var listContainer = document.getElementById("list-container");
+document.addEventListener("DOMContentLoaded", () => {
+    // Seleziona tutte le immagini
+    let images = document.querySelectorAll('.immaginiRandomContainer img');
 
-    button.addEventListener("click", function() {
-        // Toggle the visibility of the list container
-        if (listContainer.classList.contains("hidden")) {
-            listContainer.classList.remove("hidden");
-            button.textContent = "Nascondi Liste";
-        } else {
-            listContainer.classList.add("hidden");
-            button.textContent = "Mostra Liste";
-        }
+    images.forEach(img => {
+        // Aggiungi un gestore di eventi click per ciascuna immagine
+        img.addEventListener('click', () => {
+            
+            // Rimuovi la classe 'ingrandita' da tutte le immagini
+            images.forEach(i => i.classList.remove('ingrandita'));
+            
+            // Aggiungi la classe 'ingrandita' solo all'immagine cliccata
+            img.classList.add('ingrandita');
+        });
     });
 });
