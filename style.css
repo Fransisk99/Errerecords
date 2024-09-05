@@ -261,3 +261,18 @@ background-color: wheat;
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+/* Classi del Footer*/
+
+.bg-color-footer {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.text {
+    --bs-text-opacity: 1;
+    color: var(--textColor);
+    text-decoration: none;
+  }
+  
