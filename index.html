@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="Logo 6 ok 2.png">
 
+    <link rel="stylesheet" href="script.js">
     <style>
         html {
             scroll-behavior: smooth;
@@ -23,60 +24,77 @@
 </head>
 <body class="sfondo">
     <nav class="navbar">
-        <a href="#" id="logo-link"><img src="Logo 6 ok 2.png" alt="logo" class="logo"></a>
+        <a href="#" id="logo-link"><img src="Immagini/Logo 6 ok 2.png" alt="logo" class="logo"></a>
         <div class="navMenuContainer">
             <ul class="navMenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#paragrafoContainer">Chi siamo</a></li>
-                <li><a href="#albums">Albums</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#artistiContainer">Albums</a></li>
+                <li><a href="#Footer">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="titoloContainer">
-        <h1>ErreRecords</h1>
+        <h1> <img src="Immagini/Marchio ok.png" alt=""> </h1>
         <div id="paragrafoContainer" class="paragrafoContainer">
             <p class="paragrafo"><span class="evidenziato">ErreRecords</span> è un'etichetta indipendente fondata nel 2020 dai fratelli BROWN e THE F-SISK. Le nostre ultime pubblicazioni nascono da questo studio di registrazione.</p>
         </div>
     </div>
 
+    
+
+    </div>
     <div class="videoContainer">
         <video id="video" src="FuocoIntenso.mp4" autoplay muted loop>Video non supportato</video>
         <p>Guarda il video di <a href="https://www.youtube.com/watch?v=XHnQv9IZM8w" target="_blank">Fuoco intenso</a></p>
         <p>Ascolta il remix di <a href="https://www.youtube.com/watch?v=wKyft1Qazow" target="_blank">Full metal jaket</a></p>
     </div>
 
+   
+
+      <div class="immaginiRandomContainer">
+        <img src="Immagini/foto1.jpg" alt="foto1">
+        <img src="Immagini/foto2.jpg" alt="foto2">
+        <img src="Immagini/foto3.jpg" alt="foto3">
+        <img src="Immagini/foto4.jpg" alt="foto4">
+        <img src="Immagini/foto5.jpg" alt="foto5">
+        <img src="Immagini/foto6.jpg" alt="foto6">
+      </div>
+  
+    </div>
+    
     <!--Questo è il logo grande--> 
-    <figure class="superLogoContainer">
-        <a ><img class="superLogo" src="Logo 6 ok 2.png" alt="logo"></a>
+    <figure id="artistiContainer" class="superLogoContainer">
+        <a ><img class="superLogo" src="Immagini/Logo 6 ok 2.png" alt="logo"></a>
     </figure>
 
     
-    <div class="artistiContainer">
+    <!--Questa è la lista artisti/album-->
+    <div  class="artistiContainer">
         <DIV class="artistCard">
-            <h3>Brown</h3>
+            <h3> Brown</h3>
             <div class="albums">
-                <img src="Brown - Minimal copertina.jpg" alt="minimal">
-                <img src="Sound of night prova 3.jpg" alt="">
+                <img src="Immagini/Brown - Minimal copertina.jpg" alt="minimal">
+                <img src="Immagini/Sound of night prova 3.jpg" alt="">
 
             </div>
         </DIV>
 
         <DIV class="artistCard">
-            <h3>The F-Sisk</h3>
+            <h3> The F-Sisk</h3>
             <div class="albums">
-                <img src="03 Copertina Dr. Jekyll & Mr. Brown.jpg" alt="minimal">
-                <img src="02 Copertina Indistruttibile.jpg" alt="">
+                <img src="Immagini/Fronte 2.jpg" alt="sound of silence">
+                <img src="Immagini/02 Copertina Indistruttibile.jpg" alt="">
 
             </div>
         </DIV>
     </div>
   
-    <script src="script.js"></script>
+    
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-color-footer text-muted">
+<footer id="Footer" class="text-center text-lg-start bg-color-footer text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
@@ -116,8 +134,7 @@
               <i class="fas fa-gem me-3"></i>Company name
             </h6>
             <p class="text">
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              The name of the company is Errerecords
             </p>
           </div>
           <!-- Grid column -->
@@ -129,16 +146,16 @@
               Products
             </h6>
             <p class="text">
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="#!" class="text-reset"></a>
             </p>
             <p class="text">
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Music Maker</a>
             </p>
             <p class="text">
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Audacity</a>
             </p>
             <p class="text">
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Virtual dj</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -168,13 +185,13 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase text fw-bold mb-4">Contact</h6>
-            <p class="text"><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p class="text"><i class="fas fa-home me-3"></i> Roma Nepi</p>
             <p>
               <i class="fas text fa-envelope me-3"></i>
               info@example.com
             </p>
-            <p class="text"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p class="text"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <p class="text"><i class="fas fa-phone me-3"></i> + 06 90 41 176</p>
+            <p class="text"><i class="fas fa-print me-3"></i> + 06 90 41 847</p>
           </div>
           <!-- Grid column -->
         </div>
